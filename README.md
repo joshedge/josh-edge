@@ -1,2 +1,0 @@
-# josh-edge
-personal website
