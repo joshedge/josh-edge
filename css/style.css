@@ -1,0 +1,90 @@
+body {
+	background-color:#0d1a26;
+	color:white;
+	font: 20px normal;
+	font-family: 'Roboto', sans-serif;
+	line-height:1em;
+    margin-top:30px;
+	text-align:center;
+}
+
+.navbar {
+	width:60%;
+	padding-left: 20%;
+	height:30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    padding-top:10px;
+}
+
+.navbar a {
+	color: white;
+	font-weight:normal;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.contentBox1 {
+	display:flex;
+	width:60%;
+	padding-left:20%;
+}
+
+.cbColumn1 {
+	width:45%;
+	text-align: left;
+}
+
+.cbColumn1 img {
+    width:50%;
+    padding-left:25%;
+}
+
+.cbColumn2 {
+	width:45%;
+	padding-left:10%;
+	text-align: left;
+}
+
+.cbColumn2 h1 {
+	text-align: center;
+	color:white;
+	font: 40px bolder;
+	font-family: 'Roboto', sans-serif;
+}
+
+.cbColumn2 p {
+	line-height: 1.3em;
+	font-size: 24px;
+}
+
+.contentBox2 {
+    width:60%;
+	padding-left:20%;
+}
+
+.contentBox2 h1 {
+    text-align: center;
+	color:white;
+	font: 40px bolder;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contentBox2 ul {
+	text-align: left;
+	font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+}
+
+.contentBox2 ul a {
+	text-decoration: none;
+	color:white;
+}
+
+
+
+
+

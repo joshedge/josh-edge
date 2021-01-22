@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal web site</title>
+        <title>course page</title>
+        <title>Hard-coded quiz all hosted</title>
+        <link rel="stylesheet" type="text/css" href="css/student.css">
+        <script defer src="js/student.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Student Quiz</h1>
+            <br>
+            <div id="questionContainer" class="hide">
+                <h2 id="questionCurrentNumber"></h2><br>
+                <p id="question" class="currentQuestion"></p>
+                <br><br>
+                <div class="answerContainer">
+                    <div id="answer-radios" class="radioButtonsContainer">
+                        <input type="radio" name="answers" value="1" id="radioButton1"><br><br>
+                        <input type="radio" name="answers" value="2" id="radioButton2"><br><br>
+                        <input type="radio" name="answers" value="3" id="radioButton3"><br><br>
+                        <input type="radio" name="answers" value="4" id="radioButton4"><br><br>
+                    </div>
+
+                    <div class="answerLabelContainer">
+                        <label for="radioButton1" id="answer1"></label><br><br>
+                        <label for="radioButton2" id="answer2"></label><br><br>
+                        <label for="radioButton3" id="answer3"></label><br><br>
+                        <label for="radioButton4" id="answer4"></label><br><br>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="controlButtonsContainer">
+                    <button id="nextButton">Next</button><br>
+                    <button id="submitButton" class="submitButton">Submit</button><br>
+                </div>
+            </div>
+
+            <div id="resultContainer" class="hide">
+                <h2 id="resultQuestion"></h2><br>
+                <div class="resultAnswerContainer">
+                    <p id="resultQuestionContent"></p><br>
+                    <p id="result1">1</p>
+                    <p id="result2">2</p>
+                    <p id="result3">3</p>
+                    <p id="result4">4</p>
+                </div><br>
+                <h3 id="resultAnswerStatus"></h3>
+                <h3 id="resultCurrentScore"></h3>
+                <button id="resultNextButton">Next</button><br>
+            </div>
+
+            <div id="endOfQuiz"></div>
+            <button id="beginButton">Begin Quiz</button><br><br>
+            <button onclick="location.href='index.html'" id="backButton">Back</button>
+            <button id="resultsButton" class="hide">View Results</button><br><br>
+            <button onclick="location.href='index.html'" id="exitButton" class="hide">Exit</button>
+            
+        </div>
+        
+    </body>
+
+</html>

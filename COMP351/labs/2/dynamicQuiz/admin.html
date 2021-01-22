@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal web site</title>
+        <title>course page</title>
+        <title>Hard-coded quiz all hosted</title>
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <script defer src="js/admin.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style> 
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Admin Quiz Controls</h1>
+
+            <div id="questionEditor" class="hide">
+                <h2 id="questionCurrentNumber"></h2>
+                <div class="addQuestions">
+                    <form name="textform">
+                        <div class="questionText">
+                            <textarea id="questionInput" name="questionInput" placeholder="Question"></textarea><br>
+                        </div>
+
+                        <div class="answerContainer">
+                            <div class="radioButtonsContainer">
+                                <input type="radio" name="answers" value="1" id="radioButton1"><br>
+                                <input type="radio" name="answers" value="2" id="radioButton2"><br>
+                                <input type="radio" name="answers" value="3" id="radioButton3"><br>
+                                <input type="radio" name="answers" value="4" id="radioButton4"><br>
+                            </div>
+                            
+
+                            <div class="answerBoxContainer">
+                                <textarea id="answer1" name="answer1" placeholder="Answer 1"></textarea><br>
+                                <textarea id="answer2" name="answer2" placeholder="Answer 2"></textarea><br>
+                                <textarea id="answer3" name="answer3" placeholder="Answer 3"></textarea><br>
+                                <textarea id="answer4" name="answer4" placeholder="Answer 4"> </textarea> <br>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <div class="controlButtonsContainer">
+                    <button id="addButton" class="addButton">Add New</button>
+                    <button id="saveButton" class="normalButton">Save Changes</button>
+                    <button id="deleteButton" class="deleteButton" >Delete</button>
+                </div>
+                <br>
+                <div class="naviButtonsContainer">
+                    <button id="prevQuestionButton" class="normalButton">Previous</button>
+                    <button id="nextQuestionButton" class="normalButton">Next</button>
+                </div>
+            </div>
+            <br>
+            <button id="beginButton" class="normalButton">Edit Questions</button><br><br>
+            <button onclick="location.href='index.html'" class="normalButton">Back</button>
+
+            <p class="answersCorrect"></p>
+            <div class="questionsWrapper"></div>
+        </div>
+    </body>
+
+</html>
